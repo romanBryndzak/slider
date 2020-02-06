@@ -19,6 +19,19 @@
     scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 1255px) {
+    .slider-carousel{
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .slider-carousel{
+        width: 340px;
+        min-width: 340px;
+    }
+}
+
 .slide {
     background: aqua;
     display: flex;

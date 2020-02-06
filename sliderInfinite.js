@@ -1,7 +1,7 @@
 const sliderCarousel = document.querySelector(".slider-carousel");
 const dotsContainer = document.querySelector(".dots-container");
 
-function creatSlider(slidesCount) {
+function createSlider(slidesCount) {
     for (let i = 0; slidesCount > i; i++) {
         const newSlide = document.createElement("div");
         newSlide.innerText = i + 1;
@@ -11,12 +11,12 @@ function creatSlider(slidesCount) {
 
     for (let i = 0; slidesCount > i; i++) {
         const newDot = document.createElement("div");
-        newDot.className = "dot";
+        newDot.className = `${i} dot`;
         dotsContainer.append(newDot);
     }
 }
 
-creatSlider(7);
+createSlider(7);
 
 function moveSlides(direction) {
     const slides = document.querySelectorAll(".slide");
@@ -49,8 +49,7 @@ btnNext.onclick = () => {
     moveSlides("next");
 };
 
-
-
-
-
-
+dotsContainer.onclick = (event) => {
+    event.target.className;
+    console.log( event.target.className);
+};
